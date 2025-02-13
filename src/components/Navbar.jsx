@@ -1,5 +1,5 @@
 import logo from '../assets/images/logo.png'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Navbar = () => {
   return (
     <div>
@@ -13,9 +13,9 @@ const Navbar = () => {
       <nav className="d-flex aic">
         <a href="#" className="login"><i className="fa fa-user" aria-hidden="true" />Login</a>
         <ul className="nav social d-none d-md-flex">
-          <li><a href="https://www.facebook.com/fh5co" target="_blank"><i className="fa fa-facebook" /></a></li>
-          <li><a href="#"><i className="fa fa-google-plus" /></a></li>
-          <li><a href="#"><i className="fa fa-twitter" /></a></li>
+          <li><a href="https://www.facebook.com/fh5co" target="_blank"><i className="fa-brands fa-square-facebook"></i></a></li>
+          <li><a href="#"><i className="fa-brands fa-google-plus-g"></i></a></li>
+          <li><a href="#"><i className="fa-brands fa-twitter" /></a></li>
         </ul>
       </nav>
     </div>
