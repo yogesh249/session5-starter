@@ -14,6 +14,7 @@ import "./assets/css/responsive.css";
 import "./assets/css/style.css";
 import "./assets/css/swiper.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import {Routes, Route} from 'react-router-dom';
 
 // import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css";
 
@@ -21,12 +22,22 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 function App() {
   return (
     <div>
+      <div className="nav-bar">
       <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <Tours />
+      </div>
+      <div className="body-content">
+
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/tours" element={<Tours />} />
+      </Routes>
+      </div>
+      <div className="footer">
+
       <Footer />
+      </div>
     </div>
   );
 }

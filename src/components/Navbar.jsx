@@ -1,5 +1,8 @@
 import logo from '../assets/images/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom';
+
+
 const Navbar = () => {
   return (
     <div>
@@ -29,12 +32,12 @@ const Navbar = () => {
       <a className="search-icon d-none d-md-block" href="#"><i className="fa fa-search" /></a>
       <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul className="navbar-nav">
-          <li className="nav-item"><a className="nav-link" href="#">Home</a></li>
-          <li className="nav-item"><a className="nav-link" href="#">About Us</a></li>
-          <li className="nav-item"><a className="nav-link" href="#">Services</a></li>
-          <li className="nav-item"><a className="nav-link" href="#">Portfolio</a></li>
-          <li className="nav-item"><a className="nav-link" href="#">Shop</a></li>
-          <li className="nav-item"><a className="nav-link" href="#">Contact Us</a></li>
+          <li className="nav-item"><Link className="nav-link" to="/home">Home</Link></li>
+          <li className="nav-item"><Link className="nav-link" to="/aboutus">About Us</Link></li>
+          <li className="nav-item"><Link className="nav-link" to="/services">Services</Link></li>
+          <li className="nav-item"><Link className="nav-link" to="/portfolio">Portfolio</Link></li>
+          <li className="nav-item"><Link className="nav-link" to="/shop">Shop</Link></li>
+          <li className="nav-item"><Link className="nav-link" to="/contactus">Contact Us</Link></li>
         </ul>
         <form className="bg-white search-form" method="get" id="searchform">
           <div className="input-group">

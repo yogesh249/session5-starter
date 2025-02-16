@@ -24,6 +24,45 @@
 /*-----------------------------------
     1 - Header
 ------------------------------------*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Everything is a child of this node, so set its height to take up the full page or more, then set some padding at the bottom so your footer can slip into the gap. */
+#root {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+
+.nav-bar {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  background-color: #26264b;
+  display: flex;
+  height: 100px;
+ width: 100%;
+ }
+ 
+ .body-content {
+  text-align: center;
+  position: relative;
+}
+ 
+
+ .Footer{
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+ }
+
+
+
+
 header {
   background-color: rgba(26, 10, 56, 0.53);
   color: #fff;
