@@ -6,21 +6,21 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div>
-<header className="position-absolute w-100">
+<header className=" w-100">
   <div className="container">
-    <div className="top-header d-none d-sm-flex justify-content-between align-items-center">
+    <div className="top-header d-flex justify-content-center align-items-center">
       <div className="contact">
         <a href="tel:+1234567890" className="tel"><i className="fa fa-phone" aria-hidden="true" />+1234567890</a>
         <a href="/cdn-cgi/l/email-protection#50393e363f10293f25223d31393c7e333f3d"><i className="fa fa-envelope" aria-hidden="true" /><span className="__cf_email__" data-cfemail="2b42454d446b52445e59464a424705484446">[email&nbsp;protected]</span></a>
       </div>
-      <nav className="d-flex aic">
+      <div className="d-flex aic">
         <a href="#" className="login"><i className="fa fa-user" aria-hidden="true" />Login</a>
-        <ul className="nav social d-none d-md-flex">
+        <ul className="nav social d-md-flex">
           <li><a href="https://www.facebook.com/fh5co" target="_blank"><i className="fa-brands fa-square-facebook"></i></a></li>
           <li><a href="#"><i className="fa-brands fa-google-plus-g"></i></a></li>
           <li><a href="#"><i className="fa-brands fa-twitter" /></a></li>
         </ul>
-      </nav>
+      </div>
     </div>
     <nav className="navbar navbar-expand-md navbar-light">
       <a className="navbar-brand" href="index.html"><img src={logo} className='nav-logo' alt='Multipurpose' /></a>

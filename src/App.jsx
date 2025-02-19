@@ -22,11 +22,10 @@ import {Routes, Route} from 'react-router-dom';
 function App() {
   return (
     <div>
-      <div className="nav-bar">
+      
       <Navbar />
-      </div>
+      
       <div className="body-content">
-
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />

@@ -31,40 +31,36 @@
 }
 
 /* Everything is a child of this node, so set its height to take up the full page or more, then set some padding at the bottom so your footer can slip into the gap. */
-#root {
+/* #root {
   position: relative;
   min-height: 100vh;
   padding-bottom: 20px;
-}
+} */
 
 .nav-bar {
-  position: relative;
+
   width: 100%;
   background-color: #1c1c1c;
-  display: flex;
   height: 100px;
   width: 100%;
+  top:0;
  }
  
  .body-content {
-  text-align: center;
+   display: flex;
   width: 100%;
-  position: relative;
-  padding: 50px;
   background-color: #f5f5f5;
+  justify-content: center;
+
 }
  
 
  .footer{
-  display: flex;
   width: 100%;
-  position: fixed;
-  bottom: 10px;
   justify-content: center;
+  background-color: #1e1e1e;
+  bottom:0
  }
-
-
-
 
 header {
   background-color: rgba(26, 10, 56, 0.53);
@@ -177,6 +173,17 @@ header::after {
 
 .navbar-collapse .nav-link:hover {
   color: #ee1515;
+}
+
+.navbar-nav .nav-item {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav .nav-item .nav-link{
+  margin-top: 10px;
 }
 
 .cart,
