@@ -8,7 +8,7 @@ function Footer () {
                 <div className="row gy-4">
                     <div className="col-lg-4 col-md-6 footer-about">
                         <a href="index.html" className="logo d-flex align-items-center">
-                            <span className="sitename">Dewi</span>
+                            <span className="sitename">Devi</span>
                         </a>
                         <div className="footer-contact pt-3">
                             <p>A108 Adam Street</p>
@@ -54,7 +54,7 @@ function Footer () {
             </div>
 
             <div className="container copyright text-center mt-4">
-                <p>© <span>Copyright</span> <strong className="px-1 sitename">Dewi</strong> <span>All Rights Reserved</span></p>
+                <p>© <span>Copyright</span> <strong className="px-1 sitename">Multipurpose</strong> <span>All Rights Reserved</span></p>
                 <div className="credits">
                     Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
                 </div>
