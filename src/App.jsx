@@ -1,4 +1,4 @@
-import About from "./components/About";
+import About from "./pages/About";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -18,6 +18,7 @@ import "../src/App.css";
 import "./assets/css/swiper.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import {Routes, Route} from 'react-router-dom';
+import Team from "./pages/Team";
 
 // import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css";
 
@@ -30,10 +31,10 @@ function App() {
       
       <div className="main">
       <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutus" element={<About />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/tours" element={<Tours />} />
+        <Route path="/team" element={<Team/>} />
       </Routes>
       </div>
       <div className="footer">
